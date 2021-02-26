@@ -186,6 +186,10 @@ body{
     font-weight: 500;
 }
 
+.border{
+	border-right: 1.5px solid gray;
+}
+
 .temp{
     margin-left: -20px;
     color: white;

@@ -194,6 +194,10 @@ body{
 
 }
 
+.border{
+	border-right: 1.5px solid gray;
+}
+
 #wimage{
     height: 150px;
     width: 200px;

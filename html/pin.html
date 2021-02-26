@@ -44,20 +44,17 @@
 		</div>
 	<!-- preloader -->
 
-    <nav>
-        <div class="nav-wrapper">
-            <img src="../images/nav.png" alt="images">
-          <a href="#!" class="brand-logo">Weather World</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i  class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="link" href="../index.html">Home</a></li>
-          </ul>
-        </div>
-    </nav>
-    
-    <ul class="sidenav" style="background-color: rgb(131, 147, 236);" id="mobile-demo">
-      <li><a href="../index.html">Home</a></li>
-    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+              <!-- <a href="./index.html" class="">Weather World</a> -->
+              <ul id="nav-mobile" class="right">
+                <li><a href="../index.html"><u>Back to Home</u></a></li>
+              </ul>
+              <img class="brand-logo left" src="../images/pinback.png" alt="images">
+            </div>
+        </nav>
+    </div>
     <!-- navbar complete -->
 
     <!-- search bar -->
@@ -70,7 +67,7 @@
                     <input id="text" type="text" class="validate" autofocus>
                 </div>
                 <div class="col s4 m6 l6">
-                    <a id="search" class="button waves-effect waves-light btn purple"><i class="material-icons left hoverable">search</i>Search</a>
+                    <a id="search" class="button waves-effect waves-light btn purple">Search</a>
                 </div>
             </div>
         </div>
@@ -100,7 +97,7 @@
     <div class="row">
     <div class="col s12 m8 l8">
         <ul class="tabs">
-          <li class="tab col s6 m6 l6"><a class="active" href="#test1"><b class="tab">Today</b></a></li>
+          <li class="tab col s6 m6 l6 border"><a class="active" href="#test1"><b class="tab">Today</b></a></li>
           <li class="tab col s6 m6 l6"><a href="#test2"><b class="tab">Next 5 days</b></a><li>
         </ul>
         
@@ -114,19 +111,21 @@
                 <h5 class="white-text">Real Feel</h5><br><br>
             </div>
             <div class="detail">
-                <div class="col s6 m6 l6 detail1">
+                <div class="col s12 m12 l6 detail1">
                     <h5><i class="fa fa-thermometer-full" aria-hidden="true"></i> Max Temp  <span class="float"><span id="max">24</span><span>℃</span></span></h5>
                     <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                     <h5><i class="fa fa-thermometer-half" aria-hidden="true"></i> Min Temp<span class="float"><span id="min">21</span><span>℃</span></span></h5>
                     <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                     <h5><i class="fa fa-eye" aria-hidden="true"></i>    Visibility<span class="float"><span id="visibility">2.5</span> km</span></h5>
+                    <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                 </div>
-                <div class="col s6 m6 l6 detail1">
+                <div class="col s12 m12 l6 detail1">
                     <h5><i class="fa fa-arrow-down" aria-hidden="true"></i> Pressure<span class="float"><span id="pressure">1016</span> mb</span></h5>
                     <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                     <h5><i class="fa fa-tint" aria-hidden="true"></i> Humidity<span class="float"><span id="humidity">51</span> %</span></h5>
                     <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                     <h5><i class="fa fa-flag" aria-hidden="true"></i> wind<span class="float"><span id="wind">5</span> km/h</span></h5>
+                    <div style="background-color: rgb(177, 169, 169); height: 1.5px;"></div>
                 </div>
             </div>
 

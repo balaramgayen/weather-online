@@ -44,7 +44,6 @@
 		</div>
 	<!-- preloader -->
 
-    <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
               <!-- <a href="./index.html" class="">Weather World</a> -->
@@ -54,7 +53,6 @@
               <img class="brand-logo left" src="../images/pinback.png" alt="images">
             </div>
         </nav>
-    </div>
     <!-- navbar complete -->
 
     <!-- search bar -->
@@ -63,7 +61,7 @@
         <div class="col s12 m8 l6">
             <div class="row">
                 <div class="input-field col s8 m6 l6">
-                    <h5 class="input" style="padding: -8px; margin: -8px;"><i class="material-icons">location_on</i>Enter your PIN code</h5>
+                    <h5 class="input" style="padding: -8px; margin: -8px;"><i class="material-icons">store</i>Enter your PIN code</h5>
                     <input id="text" type="text" class="validate" autofocus>
                 </div>
                 <div class="col s4 m6 l6">
@@ -77,17 +75,30 @@
     <!-- first container -->
     <div class="row main">
         <div class="col s12 m10 l8 firstContainer card hoverable">
-                <div class="card-content">
-                    <div class="col s6">
-                        <h1 id="city" class="text">Kolkata</h1>
-                        <h5 id="date" class="date">12/03/2022</h5>
+            <div class="card-content">
+                <div class="col s12">
+                    <h1 id="city" class="text">Kolkata</h1>
+                </div>
+                <div>
+                    <div class="col s6 m4 l4">
+                        <h5 class="date">
+                            <span id="datet">san</span><br>
+                            <span id="daten">23-2-2021</span>
+                        </h5>
+                    </div>
+                    <div class="col s6 m8 l8">
+                        <img style="height: 150px; width: 120px;"id="wimage" src="http://openweathermap.org/img/wn02n@2x.png" alt="icon image"></img>
+                    </div>
+                </div>
+                <div>
+                    <div class="col s6 m4 l4">
                         <h2 class="temp"><span id="temp">23</span>℃</h2>
                     </div>
-                    <div class="col s6">
-                        <img id="wimage" src="http://openweathermap.org/img/wn/02n@2x.png" alt="icon image"></img>
+                    <div class="col s6 m8 l8">
                         <h5 id="about" class="">few Clouds</h5>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="col-md-4"></div>
     </div>

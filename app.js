@@ -52,8 +52,9 @@ $(document).ready(function(){
             let d = new Date(pdate);
             let a = String(d);
             let res = a.substring(0,3);
-            $('#fristDate').text(res)
-            $('#date').text(`${res} ${pdate}`);
+            $('#fristDate').text(res);
+            $('#datet').text(res);
+            $('#daten').text(pdate);
             
             $('#fristMaxTemp').text(Math.round(data.list[0].main.temp_max));
             $('#fristMinTemp').text(Math.round(data.list[0].main.temp_min));
@@ -188,7 +189,8 @@ $(document).ready(function(){
                 let a = String(d);
                 let res = a.substring(0,3);
                 $('#fristDate').text(res)
-                $('#date').text(`${res} ${pdate}`);
+                $('#datet').text(res);
+                $('#daten').text(pdate);
                 
                 $('#fristMaxTemp').text(Math.round(data.list[0].main.temp_max));
                 $('#fristMinTemp').text(Math.round(data.list[0].main.temp_min));
@@ -289,3 +291,4 @@ $(document).ready(function(){
     // $('#date').text(newdate);
 });
 
+//https://weatherworld09.herokuapp.com/index.html

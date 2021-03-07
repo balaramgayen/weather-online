@@ -20,7 +20,7 @@ $(document).ready(function(){
     $.ajax({
         url:"http://api.openweathermap.org/data/2.5/weather?q=kolkata&units=metric&appid=96252dec9c05de24a0b216615e8d7777",
         success: function (data) {
-            
+
             $('#temp').text(Math.round(data.main.temp));
             $('#city').text(data.name);
             $('#city2').text(data.name);
